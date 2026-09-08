@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FGA Structure EA | Automated XAUUSD Structure Trading</title>
+<meta name="description" content="FGA Structure EA is an automated XAUUSD structure-trading system for MT5. Review performance, explore the community and learn how eligible FGA partner clients can request access.">
+<meta name="theme-color" content="#050a12">
+<meta property="og:title" content="FGA Structure EA — Automated XAUUSD Structure Trading">
+<meta property="og:description" content="Review the performance first. Explore the system. Eligible FGA partner clients can request access.">
+<meta property="og:image" content="fga-structure-ea.png">
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1098607052730734');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1098607052730734&ev=PageView&noscript=1"></noscript>
+
+<style>
+:root{
+ --bg:#040911;--bg2:#07111e;--surface:#0a1523;--surface2:#0d1b2c;
+ --line:rgba(255,255,255,.085);--text:#f7f9fc;--muted:#92a4bb;
+ --gold:#eebd55;--cyan:#4bc8ff;--blue:#229ED9;--green:#25D366;
+ --yellow:#ffde02;--purple:#7567ff;--red:#ef4b61;
+ --r:22px;--shadow:0 24px 80px rgba(0,0,0,.38)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);line-height:1.55;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 32px));margin:auto}
+.gridbg{position:fixed;inset:0;pointer-events:none;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(to bottom,black,transparent 75%)}
+.glow{position:fixed;width:650px;height:650px;border-radius:50%;filter:blur(120px);opacity:.12;pointer-events:none;z-index:-1}.g1{background:#229ED9;top:-330px;left:15%}.g2{background:#eebd55;right:-350px;top:360px}
+.nav{position:sticky;top:0;z-index:60;background:rgba(4,9,17,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:14px;font-weight:950;letter-spacing:.6px}.brand span{color:var(--gold)}.navlinks{display:flex;gap:23px;font-size:13px;color:#b5c3d4}.navlinks a:hover{color:white}.navcta{padding:9px 14px;border:1px solid rgba(75,200,255,.28);border-radius:10px;background:rgba(75,200,255,.08);font-weight:850;color:#dff7ff}
+.hero{padding:72px 0 46px}.heroGrid{display:grid;grid-template-columns:1.04fr .96fr;gap:55px;align-items:center}.tag{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(238,189,85,.25);border-radius:999px;background:rgba(238,189,85,.055);font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#f2cf83;font-weight:900}.dot{width:7px;height:7px;border-radius:50%;background:#5de59b;box-shadow:0 0 14px #5de59b}
+h1{font-size:clamp(44px,6vw,74px);line-height:.97;letter-spacing:-3px;margin:17px 0 20px}.accent{background:linear-gradient(90deg,#fff2c4,#e8b747);-webkit-background-clip:text;color:transparent}.lead{font-size:19px;color:#b5c3d4;max-width:670px}.lead b{color:#fff}.heroBtns{display:flex;flex-wrap:wrap;gap:11px;margin-top:27px}.btn{border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:11px;font-weight:900;transition:.2s transform,.2s border-color,.2s filter}.btn:hover{transform:translateY(-2px);filter:brightness(1.07)}.primary{background:linear-gradient(135deg,#168cc7,#49c8ff);color:#fff;box-shadow:0 13px 34px rgba(34,158,217,.17)}.ghost{background:#091521;border:1px solid var(--line);color:#d9e5f2}.exness{background:var(--yellow);color:#101010}.tg{background:var(--blue)}.wa{background:var(--green);color:#062813}.vps{background:var(--purple)}
+.micro{display:flex;flex-wrap:wrap;gap:18px;margin-top:25px;color:#8497ad;font-size:12px}.micro span:before{content:"✓";color:#64db9a;margin-right:6px}
+.product{position:relative;padding:18px}.product:before{content:"";position:absolute;inset:7%;background:radial-gradient(circle,rgba(75,200,255,.16),transparent 60%);filter:blur(30px);z-index:-1}.product img{width:100%;display:block;border-radius:26px;border:1px solid rgba(238,189,85,.16);box-shadow:var(--shadow)}.status{position:absolute;left:0;bottom:38px;padding:12px 15px;border-radius:14px;background:rgba(8,18,30,.92);border:1px solid var(--line);box-shadow:0 15px 45px rgba(0,0,0,.35)}.status small{display:block;color:#8295ac;font-size:10px;text-transform:uppercase;letter-spacing:1px}.status b{font-size:14px}.status b span{color:#64db9a}
+.trustbar{padding:15px 0;border-block:1px solid var(--line);background:rgba(7,17,30,.65)}.trustrow{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}.trustitem{text-align:center;padding:12px;border-right:1px solid var(--line);font-size:12px;color:#8799af}.trustitem:last-child{border:0}.trustitem b{display:block;color:#e8eef7;font-size:14px;margin-bottom:2px}
+section{padding:78px 0}.soft{background:linear-gradient(180deg,rgba(8,18,31,.74),rgba(5,11,20,.74));border-block:1px solid var(--line)}.eyebrow{font-size:10px;color:var(--cyan);font-weight:950;letter-spacing:1.8px;text-transform:uppercase}.center{text-align:center}h2{font-size:clamp(31px,4vw,47px);line-height:1.08;letter-spacing:-1.6px;margin:10px 0 13px}.sub{color:var(--muted);max-width:720px;margin:0 auto}
+.featureGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}.feature{padding:24px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(14,29,46,.75),rgba(7,16,27,.8))}.ico{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:rgba(75,200,255,.08);border:1px solid rgba(75,200,255,.12);font-size:20px}.feature h3{font-size:18px;margin:14px 0 6px}.feature p{margin:0;color:var(--muted);font-size:13px}
+.proofGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}.proof{padding:30px;border-radius:20px;background:var(--surface);border:1px solid var(--line)}.proof .label{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:#7e91a8;font-weight:850}.proof h3{font-size:25px;margin:7px 0 8px}.proof p{color:var(--muted);margin:0 0 20px}
+.gate{text-align:center;padding:48px 0 4px}.gate p{color:#8496ac}.gate .btn{font-size:17px;padding:15px 24px}.hidden{display:none}.hidden.open{display:block;animation:open .5s ease}@keyframes open{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.choiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}.choice{padding:29px;border-radius:20px;background:var(--surface);border:1px solid var(--line);position:relative;overflow:hidden}.choice:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.5}.choice.existing:before{background:linear-gradient(90deg,transparent,var(--gold),transparent)}.choiceTag{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:900;color:var(--cyan)}.existing .choiceTag{color:var(--gold)}.choice h3{font-size:25px;margin:8px 0}.choice p{color:var(--muted);font-size:14px}.flow{display:grid;gap:9px;margin:20px 0}.flowItem{display:flex;gap:11px;align-items:center;color:#c5d1df;font-size:13px}.flowNo{width:25px;height:25px;flex:0 0 25px;border-radius:8px;display:grid;place-items:center;background:#13253a;color:#7bd7ff;font-size:10px;font-weight:950}.existing .flowNo{color:#f4d27e}
+.benefitGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;margin-top:34px}.benefit{padding:30px;border-radius:20px;border:1px solid var(--line);background:var(--surface)}.rebate{font-size:clamp(37px,5vw,58px);line-height:1;font-weight:1000;letter-spacing:-2px}.rebate span{color:var(--gold)}.benefit p{color:var(--muted);font-size:13px}.bonusrow{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:18px}.mini{padding:15px;border:1px solid var(--line);border-radius:14px;background:#07111d}.mini b{display:block;font-size:14px}.mini small{color:#8295ab}
+.timer{display:flex;gap:8px;margin:18px 0}.unit{flex:1;padding:13px 7px;border-radius:12px;background:#050b13;border:1px solid var(--line);text-align:center}.unit b{display:block;font-size:26px}.unit small{font-size:8px;color:#75879d;text-transform:uppercase;letter-spacing:1px}.period{font-size:11px;color:#8395aa}.period strong{color:#eab6bd}
+.runGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}.run{padding:28px;border-radius:20px;background:var(--surface);border:1px solid var(--line)}.run h3{margin:12px 0 7px}.run p{color:var(--muted);font-size:13px}
+.supportGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.support{padding:28px;border-radius:20px;border:1px solid var(--line);background:var(--surface);text-align:center}.support p{color:var(--muted)}
+.faq{max-width:860px;margin:32px auto 0}.faq details{border:1px solid var(--line);background:var(--surface);border-radius:13px;padding:0 17px;margin:9px 0}.faq summary{cursor:pointer;padding:17px 0;font-weight:850}.faq p{margin-top:0;color:var(--muted);font-size:13px}
+.disclaimer{padding:25px;border-radius:17px;border:1px solid var(--line);background:#07111d;color:#8294aa;font-size:12px}.disclaimer b{color:#d8e2ee}
+footer{padding:27px 0 92px;text-align:center;border-top:1px solid var(--line);color:#65798f;font-size:11px}
+.float{position:fixed;right:17px;z-index:70;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 28px rgba(0,0,0,.35);font-weight:950}.float.t{bottom:79px;background:var(--blue)}.float.w{bottom:20px;background:var(--green);color:#062813}
+.modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(1,5,10,.78);backdrop-filter:blur(9px);padding:18px;align-items:center;justify-content:center}.modal.open{display:flex}.modalCard{width:min(590px,100%);max-height:86vh;overflow:auto;padding:29px;border-radius:22px;background:#0a1726;border:1px solid var(--line);box-shadow:var(--shadow);position:relative}.close{position:absolute;right:13px;top:12px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#132338;color:#fff;cursor:pointer}.modalCard h3{font-size:25px;margin:7px 0}.modalCard p,.modalCard li{color:#a5b5c7}
+.reveal{opacity:0;transform:translateY(16px);transition:.6s}.reveal.show{opacity:1;transform:none}.mobileBar{display:none}
+@media(max-width:820px){.navlinks{display:none}.hero{padding-top:32px}.heroGrid,.proofGrid,.choiceGrid,.benefitGrid,.runGrid,.supportGrid{grid-template-columns:1fr}.product{order:-1;max-width:510px;margin:auto}.hero{text-align:center}.heroBtns,.micro{justify-content:center}.status{left:12px}.trustrow{grid-template-columns:1fr 1fr}.trustitem:nth-child(2){border-right:0}.featureGrid{grid-template-columns:1fr}.bonusrow{grid-template-columns:1fr}.float{display:none}.mobileBar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:80;padding:9px 11px calc(9px + env(safe-area-inset-bottom));gap:8px;background:rgba(4,9,17,.94);backdrop-filter:blur(16px);border-top:1px solid var(--line)}.mobileBar a{flex:1;padding:11px 7px;border-radius:9px;text-align:center;font-size:12px;font-weight:900}}
+</style>
+</head>
+<body>
+<div class="gridbg"></div><div class="glow g1"></div><div class="glow g2"></div>
+
+<nav class="nav"><div class="wrap navin">
+<a class="brand" href="#"><span>FGA</span> STRUCTURE EA</a>
+<div class="navlinks"><a href="#system">System</a><a href="#performance">Performance</a><a href="#community">Community</a><a href="#access">Access</a><a href="#faq">FAQ</a></div>
+<a class="navcta" href="#performance">Explore the System</a>
+</div></nav>
+
+<header class="hero"><div class="wrap heroGrid">
+<div>
+ <div class="tag"><span class="dot"></span> MT5 • XAUUSD AUTOMATION</div>
+ <h1>Structure trading.<br><span class="accent">Engineered for execution.</span></h1>
+ <p class="lead"><b>FGA Structure EA</b> is an automated XAUUSD structure-trading system built to identify and execute predefined breakout opportunities with systematic trade management.</p>
+ <p style="color:#f0cf82;font-weight:850">Not for sale. Available free to eligible FGA partner clients.</p>
+ <div class="heroBtns"><a class="btn primary track" data-event="ViewPerformance" href="https://www.myfxbook.com/members/FxGrowthAcademy/fga-structure-ea/12189597" target="_blank" rel="noopener">View Performance →</a><button class="btn ghost popup" data-modal="overview">How FGA Structure EA Works</button></div>
+ <div class="micro"><span>Automated execution</span><span>Structured risk controls</span><span>Account-authorized access</span></div>
+</div>
+<div class="product">
+ <img src="fga-structure-ea.png" alt="FGA Structure EA">
+ <div class="status"><small>Access model</small><b><span>●</span> Partner Access • No EA Purchase</b></div>
+</div>
+</div></header>
+
+<div class="trustbar"><div class="wrap trustrow">
+<div class="trustitem"><b>XAUUSD</b>Focused market</div><div class="trustitem"><b>MetaTrader 5</b>Execution platform</div><div class="trustitem"><b>Myfxbook</b>Performance reference</div><div class="trustitem"><b>FGA Community</b>Discussion & support</div>
+</div></div>
+
+<section id="system"><div class="wrap">
+<div class="center reveal"><div class="eyebrow">The Product</div><h2>A trading system first.<br>An offer second.</h2><p class="sub">The purpose of FGA Structure EA is systematic execution. Partner access, rebates and bonuses come later — after you understand the product and review the available information.</p></div>
+<div class="featureGrid">
+<div class="feature reveal"><div class="ico">⌁</div><h3>Structure-Based Logic</h3><p>Designed around market structure and breakout conditions rather than discretionary button-clicking.</p></div>
+<div class="feature reveal"><div class="ico">⚙</div><h3>Automated Execution</h3><p>Runs inside MT5 and manages eligible trade execution according to the EA's programmed rules.</p></div>
+<div class="feature reveal"><div class="ico">◇</div><h3>Risk & Trade Management</h3><p>Uses predefined protection and trade-management logic. Automated controls reduce manual intervention but cannot eliminate trading risk.</p></div>
+</div>
+</div></section>
+
+<section id="performance" class="soft"><div class="wrap">
+<div class="center reveal"><div class="eyebrow">Evidence Before Action</div><h2>Review the performance yourself.</h2><p class="sub">Before considering partner access, start with the public Myfxbook page. Historical performance is information — not a promise of future results.</p></div>
+<div class="proofGrid">
+<div class="proof reveal"><div class="label">Independent reference</div><h3>FGA Structure EA on Myfxbook</h3><p>Review the available account history, gains, drawdown and trading activity directly on the performance page.</p><a class="btn primary track" data-event="ViewPerformance" href="https://www.myfxbook.com/members/FxGrowthAcademy/fga-structure-ea/12189597" target="_blank" rel="noopener">Open Myfxbook →</a></div>
+<div class="proof reveal"><div class="label">Evaluate intelligently</div><h3>Don't judge by one number.</h3><p>Consider drawdown, account age, trade history, frequency and risk profile. No historical track record can guarantee what happens next.</p><button class="btn ghost popup" data-modal="performance">Performance Checklist</button></div>
+</div>
+</div></section>
+
+<section id="community"><div class="wrap">
+<div class="center reveal"><div class="eyebrow">Community Layer</div><h2>See the conversation around the EA.</h2><p class="sub">Join the dedicated FGA Structure EA community for setup discussions, backtests, questions, updates and user experiences.</p></div>
+<div class="proofGrid">
+<div class="proof reveal"><div class="label">Telegram community</div><h3>FGA Structure EA Community</h3><p>Explore the discussion before deciding whether you want to continue. User experiences are individual and should not be treated as guaranteed or typical results.</p><a class="btn tg track" data-event="DiscussionGroup" href="https://t.me/+VNI3c42olqg2ZTA1" target="_blank" rel="noopener">Join Community →</a></div>
+<div class="proof reveal"><div class="label">Direct assistance</div><h3>Questions before access?</h3><p>You can speak with FGA support about the access process without committing to anything.</p><button class="btn ghost popup" data-modal="support">Contact Options</button></div>
+</div>
+<div class="gate reveal"><p>Performance reviewed? Community explored?</p><button id="moreBtn" class="btn primary">Yes, I Want to Know More →</button></div>
+</div></section>
+
+<div id="details" class="hidden">
+<section id="access" class="soft"><div class="wrap">
+<div class="center"><div class="eyebrow">Partner Access</div><h2>Choose the path that applies to you.</h2><p class="sub">FGA Structure EA has no retail checkout. Eligible users receive account-authorized access after the applicable Exness partner relationship is verified.</p></div>
+<div class="choiceGrid">
+<div class="choice reveal"><div class="choiceTag">Path A • New Client</div><h3>I'm new to Exness</h3><p>The shortest route for a new client.</p><div class="flow"><div class="flowItem"><span class="flowNo">01</span>Open the FGA Exness partner link</div><div class="flowItem"><span class="flowNo">02</span>Complete Exness registration using partner code <b>5ly4pgpkje</b></div><div class="flowItem"><span class="flowNo">03</span><span><b>After registration</b> create your MT5 trading account</span></div><div class="flowItem"><span class="flowNo">04</span>Send the MT5 Account ID to FGA</div><div class="flowItem"><span class="flowNo">05</span>Eligibility verified → EA access</div></div><a class="btn exness track" data-event="ExnessNewClient" href="https://one.exness-track.com/a/5ly4pgpkje" target="_blank" rel="sponsored noopener">Open Exness Partner Link</a></div>
+<div class="choice existing reveal"><div class="choiceTag">Path B • Existing Client</div><h3>I already use Exness</h3><p>Existing-client partner eligibility is determined by Exness.</p><div class="flow"><div class="flowItem"><span class="flowNo">01</span>Contact official Exness support</div><div class="flowItem"><span class="flowNo">02</span>Ask about changing/linking your partner or IB</div><div class="flowItem"><span class="flowNo">03</span>Follow the process Exness provides</div><div class="flowItem"><span class="flowNo">04</span><span>Use FGA partner code <b>5ly4pgpkje</b> or <a href="https://one.exness-track.com/a/5ly4pgpkje" target="_blank" rel="sponsored noopener" style="color:#f4d27e;text-decoration:underline;overflow-wrap:anywhere">https://one.exness-track.com/a/5ly4pgpkje</a> where instructed</span></div><div class="flowItem"><span class="flowNo">05</span>After confirmation, create the eligible MT5 account if instructed</div><div class="flowItem"><span class="flowNo">06</span>Send the Account ID to FGA → verification → access</div></div><div class="heroBtns"><a class="btn exness track" data-event="ExnessExistingClient" href="https://one.exness-track.com/a/5ly4pgpkje" target="_blank" rel="sponsored noopener">FGA Partner Link</a><button class="btn ghost popup" data-modal="existing">Detailed Instructions</button></div></div>
+</div>
+<p class="center" style="color:#71849b;font-size:11px;margin-top:16px">Existing-client processing times vary and are controlled by Exness. Any estimated timeframe is not guaranteed.</p>
+</div></section>
+
+<section id="benefits"><div class="wrap">
+<div class="center reveal"><div class="eyebrow">Partner Benefits</div><h2>Additional value after eligibility.</h2><p class="sub">These benefits support the program; they are not presented as trading-profit guarantees.</p></div>
+<div class="benefitGrid">
+<div class="benefit reveal"><div class="rebate">Up to <span>60%</span><br>trade rebate</div><p>For eligible FGA partner clients, up to 60% of qualifying partner-generated spread/commission compensation may be returned as a rebate under applicable FGA terms. This is not reimbursement of 60% of deposits, losses or all trading costs.</p><div class="bonusrow"><div class="mini"><b>💸 Eligible Rebate</b><small>Based on qualifying partner compensation</small></div><div class="mini"><b>📘 Strategy eBook</b><small>Educational manual-trading bonus</small></div></div><button class="btn ghost popup" data-modal="terms" style="margin-top:18px">Read Benefit Details</button></div>
+<div class="benefit reveal"><div class="eyebrow" style="color:#ef9cab">Current Daily Bonus Window</div><h3 style="font-size:24px;margin:8px 0">Today's eligibility window</h3><div class="timer"><div class="unit"><b id="hh">00</b><small>Hours</small></div><div class="unit"><b id="mm">00</b><small>Minutes</small></div><div class="unit"><b id="ss">00</b><small>Seconds</small></div></div><div id="dateLabel" class="period"></div><p class="period"><strong>Transparent timing:</strong> this is a recurring daily promotional window. It resets at 00:00 local device time and closes at 23:59 each day.</p></div>
+</div>
+</div></section>
+
+<section class="soft"><div class="wrap">
+<div class="center reveal"><div class="eyebrow">Deployment</div><h2>Run MT5 your way.</h2><p class="sub">Use your own computer or an optional VPS. The important requirement is keeping MT5 available whenever you want the EA operating.</p></div>
+<div class="runGrid">
+<div class="run reveal"><div class="ico">▣</div><h3>Desktop / Laptop</h3><p>Install MT5 and FGA Structure EA locally. Your computer, internet connection and MT5 terminal need to remain running while automated trading is active.</p><button class="btn ghost popup" data-modal="install">Installation Overview</button></div>
+<div class="run reveal"><div class="ico">☁</div><h3>Optional VPS</h3><p>Prefer a remote environment? A VPS can keep MT5 online without leaving your personal computer switched on. FXVM is an optional third-party provider and the link is an affiliate link.</p><a class="btn vps track" data-event="VPSAffiliate" href="https://fxvm.net/?aff=93494" target="_blank" rel="sponsored noopener">Explore FXVM VPS →</a></div>
+</div>
+</div></section>
+
+<section id="support"><div class="wrap">
+<div class="center reveal"><div class="eyebrow">Support</div><h2>Need help with access?</h2><p class="sub">Send your MT5 Account ID or ask a question through either official FGA support channel.</p></div>
+<div class="supportGrid">
+<div class="support reveal"><div class="ico" style="margin:auto">➤</div><h3>Telegram Support</h3><p>Direct FX Growth Academy support.</p><a class="btn tg track" data-event="TelegramSupport" href="https://t.me/fxgrowthacademyy" target="_blank" rel="noopener">Open Telegram</a></div>
+<div class="support reveal"><div class="ico" style="margin:auto">◉</div><h3>WhatsApp Support</h3><p>Alternative support and account-ID submission.</p><a class="btn wa track" data-event="WhatsAppSupport" href="https://wa.me/qr/XFA57TXXEXDDC1" target="_blank" rel="noopener">Open WhatsApp</a></div>
+</div>
+</div></section>
+
+<section id="faq" class="soft"><div class="wrap">
+<div class="center reveal"><div class="eyebrow">FAQ</div><h2>Everything important, without the clutter.</h2></div>
+<div class="faq reveal">
+<details><summary>Is FGA Structure EA for sale?</summary><p>No. It is offered as an account-authorized access benefit for eligible FGA partner clients.</p></details>
+<details><summary>Does Exness registration guarantee EA access?</summary><p>No. The submitted MT5 account must first be verified as eligible under the FGA partner-access program.</p></details>
+<details><summary>Can every existing Exness user change their IB/partner?</summary><p>No such guarantee is made. Contact official Exness support and follow the eligibility/process they provide.</p></details>
+<details><summary>What does “up to 60% trade rebate” mean?</summary><p>It refers to a maximum share of eligible partner-generated spread/commission compensation returned under qualifying FGA rebate terms. It does not mean 60% of losses, deposits or all trading costs.</p></details>
+<details><summary>Does FGA Structure EA guarantee profit?</summary><p>No. Automated trading involves substantial risk and results can change with market conditions, execution, settings and account risk.</p></details>
+<details><summary>Is a VPS required?</summary><p>No. A suitable computer can run MT5. A VPS is an optional convenience for remote uptime.</p></details>
+</div>
+</div></section>
+
+<section><div class="wrap"><div class="disclaimer reveal"><b>Risk Disclaimer:</b> Trading forex, gold and other leveraged products involves substantial risk and may result in loss of capital. Past performance does not guarantee future results. FGA Structure EA does not guarantee profits or prevent losses. Use appropriate risk management. All educational material is informational and is not individualized financial advice.<br><br><b>Affiliate / Partner Disclosure:</b> FX Growth Academy may receive partner or affiliate compensation when eligible users register, trade or purchase services through links on this website, including Exness and FXVM. Rebate availability and amounts depend on qualifying partner compensation and applicable terms. Exness and FXVM are third-party services and control their own eligibility, account, service and processing decisions.</div></div></section>
+</div>
+
+<footer><div class="wrap">© <span id="year"></span> FX Growth Academy · FGA Structure EA · Trade responsibly.</div></footer>
+<a class="float t track" data-event="FloatingTelegram" href="https://t.me/fxgrowthacademyy" target="_blank" rel="noopener">➤</a>
+<a class="float w track" data-event="FloatingWhatsApp" href="https://wa.me/qr/XFA57TXXEXDDC1" target="_blank" rel="noopener">◉</a>
+<div class="mobileBar"><a class="tg track" data-event="MobileTelegram" href="https://t.me/fxgrowthacademyy" target="_blank" rel="noopener">Telegram</a><a class="exness track" data-event="MobileExness" href="https://one.exness-track.com/a/5ly4pgpkje" target="_blank" rel="sponsored noopener">Partner Access</a></div>
+
+<div class="modal" id="modal"><div class="modalCard"><button class="close" id="close">×</button><div id="modalContent"></div></div></div>
+
+<script>
+const info={
+overview:`<div class="eyebrow">Product Overview</div><h3>Systematic XAUUSD execution</h3><p>FGA Structure EA is designed to identify qualifying market-structure breakout conditions and execute/manage trades through MetaTrader 5 according to programmed rules. Automation can improve consistency of execution, but it cannot remove market risk.</p>`,
+performance:`<div class="eyebrow">Performance Checklist</div><h3>What should you look at?</h3><ul><li>Account history and age</li><li>Drawdown, not only return</li><li>Trade frequency and consistency</li><li>Risk profile and losing periods</li><li>Whether the available history is relevant to your expectations</li></ul><p>Historical performance never guarantees future results.</p>`,
+support:`<div class="eyebrow">Contact FGA</div><h3>Choose a support channel</h3><div class="heroBtns"><a class="btn tg track" data-event="ModalTelegram" href="https://t.me/fxgrowthacademyy" target="_blank" rel="noopener">Telegram</a><a class="btn wa track" data-event="ModalWhatsApp" href="https://wa.me/qr/XFA57TXXEXDDC1" target="_blank" rel="noopener">WhatsApp</a></div>`,
+existing:`<div class="eyebrow">Existing Exness Client</div><h3>Detailed process</h3><ol><li>Contact official Exness support.</li><li>Ask whether your client/account is eligible to change or link its partner/IB relationship.</li><li>Follow the process Exness provides.</li><li>Where Exness instructs you to enter a partner code/link, use <b>5ly4pgpkje</b> or <b>https://one.exness-track.com/a/5ly4pgpkje</b>.</li><li>Wait for Exness confirmation. Processing time varies.</li><li>If Exness instructs you to do so, create a new eligible MT5 trading account after confirmation.</li><li>Send that MT5 Account ID to FGA support.</li><li>FGA verifies eligibility and provides EA access if qualified.</li></ol>`,
+terms:`<div class="eyebrow">Partner Benefit Details</div><h3>Rebate + eBook</h3><p>The advertised rebate is up to 60% of eligible partner-generated spread/commission compensation attributable to qualifying activity. Actual eligibility and amount can vary. It is not reimbursement of deposits, losses or 60% of every trading cost. The strategy eBook is an educational bonus for qualifying participants and does not promise trading results.</p>`,
+install:`<div class="eyebrow">Installation Overview</div><h3>Typical MT5 setup</h3><ol><li>Install and log in to MetaTrader 5.</li><li>Place the authorized EA file in the MT5 Experts folder.</li><li>Refresh/restart MT5 and attach the EA to the intended chart.</li><li>Enable algorithmic trading and use the intended settings/risk.</li><li>Keep MT5 connected whenever you want the EA operating.</li></ol><p>Follow the exact FGA instructions supplied with access.</p>`
+};
+const modal=document.getElementById('modal'),mc=document.getElementById('modalContent');
+document.querySelectorAll('.popup').forEach(b=>b.onclick=()=>{mc.innerHTML=info[b.dataset.modal]||'';modal.classList.add('open')});
+document.getElementById('close').onclick=()=>modal.classList.remove('open');modal.onclick=e=>{if(e.target===modal)modal.classList.remove('open')};
+document.getElementById('moreBtn').onclick=()=>{document.getElementById('details').classList.add('open');document.getElementById('access').scrollIntoView({behavior:'smooth'});try{fbq('trackCustom','RevealAccess')}catch(e){}};
+function tick(){const n=new Date(),e=new Date(n);e.setHours(23,59,59,999);let d=Math.max(0,e-n);hh.textContent=String(Math.floor(d/36e5)).padStart(2,'0');mm.textContent=String(Math.floor((d%36e5)/6e4)).padStart(2,'0');ss.textContent=String(Math.floor((d%6e4)/1e3)).padStart(2,'0');dateLabel.textContent='Current window: '+n.toLocaleDateString(undefined,{weekday:'long',year:'numeric',month:'short',day:'numeric'})}tick();setInterval(tick,1000);
+document.getElementById('year').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.1});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+document.addEventListener('click',e=>{const a=e.target.closest('.track');if(a){try{fbq('trackCustom',a.dataset.event||'CTA_Click')}catch(x){}}});
+</script>
+</body></html>
