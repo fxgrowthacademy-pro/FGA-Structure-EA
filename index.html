@@ -6,9 +6,11 @@
 <title>FGA Structure EA | Automated XAUUSD Structure Trading</title>
 <meta name="description" content="FGA Structure EA is an automated XAUUSD structure-trading system for MT5. Review performance, explore the community and learn how eligible FGA partner clients can request access.">
 <meta name="theme-color" content="#07101c">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:title" content="FGA Structure EA — Automated XAUUSD Structure Trading">
 <meta property="og:description" content="Review performance first. Explore the system. Eligible FGA partner clients can request access.">
 <meta property="og:image" content="fga-structure-ea.png">
+<link rel="preload" as="image" href="fga-structure-ea.webp" type="image/webp" fetchpriority="high">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -76,7 +78,7 @@ h1 .accent{color:var(--gold2)}
 .productTop{display:flex;align-items:center;justify-content:space-between;padding:3px 5px 13px;color:#8094aa;font-size:10px;letter-spacing:1px;text-transform:uppercase}
 .productTop b{color:#b9c9d9}.productTop span{display:flex;align-items:center;gap:6px}.productTop i{width:6px;height:6px;border-radius:50%;background:var(--green)}
 .logoStage{position:relative;border-radius:22px;overflow:hidden;background:radial-gradient(circle at 50% 42%,#11263a,#070e18 72%);border:1px solid rgba(255,255,255,.07);aspect-ratio:1}
-.logoStage img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(.94);filter:saturate(.94) contrast(1.02);animation:floatLogo 7s ease-in-out infinite}
+.logoStage picture{display:block;width:100%;height:100%}.logoStage img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(.94);filter:saturate(.94) contrast(1.02);animation:floatLogo 7s ease-in-out infinite}
 @keyframes floatLogo{0%,100%{transform:scale(.94) translateY(0)}50%{transform:scale(.94) translateY(-5px)}}
 .accessBadge{position:absolute;right:-18px;top:68px;padding:12px 14px;border-radius:14px;background:rgba(9,21,35,.95);border:1px solid rgba(214,184,109,.25);box-shadow:0 18px 45px rgba(0,0,0,.34);backdrop-filter:blur(15px)}
 .accessBadge small{display:block;color:#7f93a8;font-size:8px;text-transform:uppercase;letter-spacing:1.2px}.accessBadge b{font-size:12px;color:#f0d99a}
@@ -142,7 +144,9 @@ footer{padding:27px 0 105px;text-align:center;color:#60758b;font-size:10px;borde
 .modal,.exitOffer{display:none;position:fixed;inset:0;z-index:110;background:rgba(2,7,13,.82);backdrop-filter:blur(12px);padding:18px;align-items:center;justify-content:center}.modal.open,.exitOffer.open{display:flex}
 .modalCard,.exitCard{width:min(600px,100%);max-height:86vh;overflow:auto;padding:31px;border-radius:23px;background:linear-gradient(145deg,#0d1c2e,#091522);border:1px solid rgba(176,198,221,.15);box-shadow:0 35px 110px rgba(0,0,0,.58);position:relative}.modalCard h3,.exitCard h3{font-size:27px;line-height:1.12;color:#f3f6fa;margin:7px 0 10px}.modalCard p,.modalCard li,.exitCard p{color:#91a4b8;font-size:12px}.close{position:absolute;right:13px;top:12px;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:#122439;color:#d7e2ed;cursor:pointer}
 .exitCard{text-align:center}.exitCard h3 span{color:var(--gold2)}.exitPerks{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin:18px 0}.exitPerk{padding:7px 9px;border-radius:999px;background:#102238;border:1px solid var(--line);font-size:9px;color:#b7c6d4}.exitActions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.exitLeave{margin-top:15px;border:0;background:transparent;color:#667d93;text-decoration:underline;cursor:pointer;font-size:10px}
-.reveal{opacity:1;transform:none}.motion .reveal{opacity:0;transform:translateY(12px);transition:opacity .55s ease,transform .55s ease}.motion .reveal.show{opacity:1;transform:none}
+.reveal{opacity:1;transform:none}
+.reveal.show{animation:fgaReveal .55s cubic-bezier(.2,.7,.2,1) both}
+@keyframes fgaReveal{from{opacity:.35;transform:translateY(10px)}to{opacity:1;transform:none}}
 .mobileBar{display:none}
 
 /* RESPONSIVE */
@@ -153,6 +157,11 @@ footer{padding:27px 0 105px;text-align:center;color:#60758b;font-size:10px;borde
  .shell{width:min(100% - 24px,1180px)}.navin{height:62px}.navBtn{font-size:10px;padding:8px 10px}.hero{padding:28px 0 24px}h1{font-size:43px;letter-spacing:-2.2px}.heroLead{font-size:15px}.showcase{padding:0 7px}.productFrame{padding:10px;border-radius:24px}.logoStage{border-radius:17px}.accessBadge,.systemBadge{position:static;margin-top:8px;display:inline-block}.accessBadge{margin-left:6px}.productFoot{margin-top:9px}.credItem{padding:13px 8px}.credItem b{font-size:11px}section{padding:49px 0}.features{grid-template-columns:1fr}.performancePanel{border-radius:19px}.perfMain,.perfSide{padding:24px}.gate{padding:20px}.tabs{max-width:none}.timeline{padding:23px 19px}.pathHead{display:block}.benefitHero,.timerCard{padding:24px}.bigBenefit{font-size:45px}.socialFloat{display:none}.offerDock{bottom:68px;width:calc(100% - 18px);padding:8px 8px 8px 11px}.dockTop{display:none}.dockMain{font-size:10px}.dockBtn{font-size:9px;padding:8px}.mobileBar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:7px;background:rgba(7,16,28,.95);backdrop-filter:blur(18px);border-top:1px solid var(--line)}.mobileBar a{flex:1;text-align:center;padding:10px 7px;border-radius:9px;font-size:10px;font-weight:900}.mobileBar .tg{background:var(--tg)}.mobileBar .ex{background:var(--ex);color:#111}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+:focus-visible{outline:2px solid var(--azure2);outline-offset:3px}
+img{max-width:100%}
+@media(max-width:650px){.btn{min-height:42px}}
+
 </style>
 </head>
 <body>
@@ -181,7 +190,10 @@ footer{padding:27px 0 105px;text-align:center;color:#60758b;font-size:10px;borde
   <div class="showcaseGlow"></div>
   <div class="productFrame">
    <div class="productTop"><b>FGA STRUCTURE EA</b><span><i></i> SYSTEM ONLINE</span></div>
-   <div class="logoStage"><img src="fga-structure-ea.png" alt="FGA Structure EA product artwork" width="1024" height="1024" fetchpriority="high" decoding="async"></div>
+   <div class="logoStage"><picture>
+<source srcset="fga-structure-ea.webp" type="image/webp">
+<img src="fga-structure-ea.png" alt="FGA Structure EA product artwork" width="1024" height="1024" fetchpriority="high" decoding="async">
+</picture></div>
    <div class="productFoot"><div class="pf"><b>XAUUSD</b><small>Market</small></div><div class="pf"><b>MT5</b><small>Platform</small></div><div class="pf"><b>Automated</b><small>Execution</small></div></div>
   </div>
   <div class="accessBadge"><small>Access model</small><b>FREE · ELIGIBLE CLIENTS</b></div>
@@ -327,7 +339,6 @@ terms:`<div class="eyebrow">Partner Benefit Details</div><h3>Rebate + eBook</h3>
 install:`<div class="eyebrow">Installation Overview</div><h3>Typical MT5 setup</h3><ol><li>Install and log in to MetaTrader 5.</li><li>Place the authorized EA file in the MT5 Experts folder.</li><li>Refresh/restart MT5 and attach the EA to the intended chart.</li><li>Enable algorithmic trading and use the intended settings/risk.</li><li>Keep MT5 connected whenever you want the EA operating.</li></ol><p>Follow the exact FGA instructions supplied with access.</p>`
 };
 
-document.documentElement.classList.add('motion');
 const modal=document.getElementById('modal'),mc=document.getElementById('modalContent');
 document.querySelectorAll('.popup').forEach(b=>b.addEventListener('click',()=>{mc.innerHTML=info[b.dataset.modal]||'';modal.classList.add('open');document.body.style.overflow='hidden'}));
 function closeModal(){modal.classList.remove('open');document.body.style.overflow=''}
@@ -352,15 +363,45 @@ function goBenefits(){details.classList.add('open');setTimeout(()=>document.getE
 document.getElementById('dockBtn').addEventListener('click',()=>{try{fbq('trackCustom','FloatingBenefitsClick')}catch(e){}goBenefits()});
 document.getElementById('dockClose').addEventListener('click',()=>dock.classList.add('hide'));
 
-/* Exit intent: desktop only on genuine top-edge exit; once per session. Mobile fallback is delayed and non-blocking. */
-const exit=document.getElementById('exitOffer');let exitShown=false;try{exitShown=sessionStorage.getItem('fgaExitShown')==='1'}catch(e){}
-const loadedAt=Date.now();let interacted=false;['scroll','pointerdown','keydown','touchstart'].forEach(ev=>window.addEventListener(ev,()=>interacted=true,{passive:true,once:true}));
-function showExit(source){if(exitShown||exit.classList.contains('open')||modal.classList.contains('open'))return;if(Date.now()-loadedAt<5000&&!interacted)return;const b=document.getElementById('benefits');if(details.classList.contains('open')){const r=b.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)return}exitShown=true;try{sessionStorage.setItem('fgaExitShown','1')}catch(e){}exit.classList.add('open');document.body.style.overflow='hidden';try{fbq('trackCustom','ExitIntentOfferShown');fbq('trackCustom',source==='mobile'?'ExitIntentMobile':'ExitIntentDesktop')}catch(e){}}
+/* Exit intent — desktop only.
+   Mobile browsers do not expose a reliable exit-intent signal, so no timed mobile popup is used.
+   Desktop trigger requires: fine pointer, 8s on page, prior interaction, genuine top-edge exit,
+   no open modal, benefits not currently visible, and only once per session. */
+const exit=document.getElementById('exitOffer');
+let exitShown=false;
+try{exitShown=sessionStorage.getItem('fgaExitShown')==='1'}catch(e){}
+const loadedAt=Date.now();
+let interacted=false;
+['scroll','pointerdown','keydown'].forEach(ev=>window.addEventListener(ev,()=>{interacted=true},{passive:true,once:true}));
+
+function showExit(){
+  if(exitShown||exit.classList.contains('open')||modal.classList.contains('open'))return;
+  if(Date.now()-loadedAt<8000||!interacted)return;
+  const benefits=document.getElementById('benefits');
+  if(details.classList.contains('open')&&benefits){
+    const r=benefits.getBoundingClientRect();
+    if(r.top<innerHeight&&r.bottom>0)return;
+  }
+  exitShown=true;
+  try{sessionStorage.setItem('fgaExitShown','1')}catch(e){}
+  exit.classList.add('open');
+  document.body.style.overflow='hidden';
+  try{fbq('trackCustom','ExitIntentOfferShown');fbq('trackCustom','ExitIntentDesktop')}catch(e){}
+}
 function closeExit(){exit.classList.remove('open');document.body.style.overflow=''}
-document.addEventListener('mouseout',e=>{if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;if(e.relatedTarget||e.toElement)return;if(e.clientY<=6)showExit('desktop')});
-if(matchMedia('(hover:none),(pointer:coarse)').matches)setTimeout(()=>{if(!document.hidden&&scrollY<Math.max(180,innerHeight*.25))showExit('mobile')},18000);
-document.getElementById('exitClose').addEventListener('click',closeExit);document.getElementById('exitLeave').addEventListener('click',closeExit);exit.addEventListener('click',e=>{if(e.target===exit)closeExit()});
-document.getElementById('exitView').addEventListener('click',()=>{closeExit();goBenefits();try{fbq('trackCustom','ExitIntentBenefitsClick')}catch(e){}});
+
+document.addEventListener('mouseout',e=>{
+  if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  if(e.relatedTarget||e.toElement)return;
+  if(e.clientY<=5)showExit();
+});
+document.getElementById('exitClose').addEventListener('click',closeExit);
+document.getElementById('exitLeave').addEventListener('click',closeExit);
+exit.addEventListener('click',e=>{if(e.target===exit)closeExit()});
+document.getElementById('exitView').addEventListener('click',()=>{
+  closeExit();goBenefits();
+  try{fbq('trackCustom','ExitIntentBenefitsClick')}catch(e){}
+});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();closeExit()}});
 </script>
 </body></html>
